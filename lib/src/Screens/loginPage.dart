@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/alpha/flutter_social_foody-master/lib/src/Screens/Profile%20Page.dart';
-import 'file:///C:/Users/alpha/flutter_social_foody-master/lib/src/Screens/signup.dart';
+import 'signup.dart';
+//import 'file:///C:/Users/alpha/flutter_social_foody-master/lib/src/Screens/Profile%20Page.dart';
+//import 'flutter_social_foody-master/lib/src/Screens/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'bezierContainer.dart';
+import '../Widget/bezierContainer.dart';
 
 // import '../Widget/bezierContainer.dart';
 
@@ -69,10 +70,10 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _submitButton() {
     return InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => ProfilePage()));
-      },
+      // onTap: () {
+      //   Navigator.push(
+      //       context, MaterialPageRoute(builder: (context) => ProfilePage()));
+      //},
       child: Container(
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.symmetric(vertical: 15),
@@ -90,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
             gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
-                colors: [Color(0xff00BCD4), Color(0xff00BCD4)])),
+                colors: <Color> [Colors.lightBlueAccent, Colors.lightBlueAccent])),
         child: Text(
           'Sign In',
           style: TextStyle(fontSize: 20, color: Colors.white),
